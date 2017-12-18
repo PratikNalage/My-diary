@@ -1,0 +1,157 @@
+<html>
+<title>Account</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="abcd.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body,html{
+background-image:url("Galaxy.jpg")
+
+}
+.abc1{background-image:url("Galaxy.jpg")}
+.abc
+{margin-left:500px;}
+
+.mySidebar
+{background-color:grey;}
+
+</style>
+
+
+
+
+<body>
+
+
+<header class="abcd-container abcd-center abcd-padding-32"> 
+  
+  <span class="abcd-button abcd-hide-large abcd-xxlarge abcd-hover-text-grey" onclick="abcd_open()"><i class="fa fa-bars"></i></span>
+
+    <h1 style="color:white"><b>My Account</b></h1>
+    <div class="-section -bottombar -padding-16">
+      
+      <a href="ViewDiary.html"><button class=" -button -black">MyDiary</button></a>
+       <a href="Memories.html"><button class="-button -white"><i class="fa fa-diamond abcd-margin-right"></i>Memories</button></a>
+     </div>
+    </div>
+</header>
+
+
+
+
+<nav class="abcd-sidebar abcd-collapse abcd-black abcd-animate-left ;" style="z-index:3;width:400px; " id="mySidebar"><br>
+  <div class="abcd-container">
+    <a href="#" onclick="close()" class="-hide-large -right -jumbo -padding -hover-grey" title="close menu">
+      
+    </a>
+    <img src="person1.jpg" style="width:45%;" class="abcd-round"><br><br>
+    <h4 ><b>PROFILE</b></h4>
+    <p class="abcd-text-grey">Hello ji.</p>
+  </div>
+  <div class="abcd-bar-block">
+    <a href="Account.html" onclick="abcd_close()" class="abcd-bar-item -button -padding -text-teal" ><i class="fa fa-th-large fa-fw abcd-margin-right"></i>MyAccount</a> 
+    <a href="#" onclick="abcd_close()" class="abcd-bar-item -button -padding"><i class="fa fa-user fa-fw abcd-margin-right"></i>Name</a> 
+    <a href="#" onclick="abcd_close()" class="abcd-bar-item -button -padding"><i class="fa fa-envelope fa-fw abcd-margin-right"></i>Contact:+91 </a>
+   <a href="#" onclick="abcd_close()" class="abcd-bar-item -button -padding">Gender</a>
+   <a href="#birthdate" onclick="abcd_close()" class="abcd-bar-item -button -padding">Birthdate</a>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+  <div class="abcd-panel abcd-large">
+    <i class="fa fa-facebook-official abcd-hover-opacity"></i>
+    <i class="fa fa-instagram abcd-hover-opacity"></i>
+    <i class="fa fa-snapchat abcd-hover-opacity"></i>
+    <i class="fa fa-twitter abcd-hover-opacity"></i>
+    
+  </div>
+</nav>
+<div class="abcd-overlay abcd-hide-large abcd-animate-opacity" onclick="abcd_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<iframe src="Todolist.html" height=500px width=900px frameborder=1 class="abc"></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+
+
+<a href=""><h1 class="abc" style="color:white">Write your diary for today</h1></a>
+
+
+<hr>
+<div class="Image">
+<center class="abc2">
+    <a href="www.twitter.com"><img src="Twitter.png" height="30" width="30" ></a>
+    
+    <a href="www.Facebook.com"><img class="middle-img" src="Facebook.png" height="30" width="30"></a>
+    
+    <img src="Snapchat.png" height="30" width="30">
+     
+    <a href="www.Instagram.com"><img class="middle-img" src="Instagram.png" height="30" width="30"></a>
+    
+    <img src="Whatsapp.png" height="30" width="30"> 
+</center>
+</div>
+
+
+
+
+<script>
+function abcd_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function abcd_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+<html>

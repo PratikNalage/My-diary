@@ -1,0 +1,109 @@
+.hdr{
+    width: 100%;
+    height: 50px;
+    background-color:black ;
+    -webkit-margin-top-collapse: discard;
+}
+.bdy{
+    margin: 0px;
+        background-image:url("d.jpg") ; 
+       background-size: 100%;
+        z-index:-2  ;
+}
+h1.title{
+    font-size: 250%;
+    margin: 0px;
+    color: midnightblue;
+}
+#register{
+    position: absolute;
+    background-image: url('d1.jpg');
+    background-size: 700px 500px;
+    left: 30%;
+    top: 200px;
+    right: 30%;
+    z-index: 2;
+}
+
+.fonts{
+    font-family: Times New Roman;
+    font-size:70px;
+    font-weight: bold;
+}
+table{
+    padding:2px; 
+}
+
+tr{
+    padding: 5px;
+}
+.textbox{
+    font-size: 14pt;
+    height: 25px;
+    border-radius: 5px;
+        background:#6600ff;
+}
+#createacc {
+    background: url('http://realbinaryoptionsreview.com/wp-content/uploads/2015/01/Create-A-Free-Account.png');
+    background-size: 420px 100px;
+    margin-left:75px;
+    width: 420px; /* width of image */
+    height: 100px; /* height of image */
+    border: 0;
+}
+@media only screen and (max-width: 1500px){
+    #register{
+        background-image: initial;
+    }
+}
+.subhead{
+text-align:center;
+display:block;
+border: hidden ;
+}
+.regis{
+display:inline;
+border:800px hidden;
+border-radius:25px;
+background:#0d0d0d;
+color:white;
+margin-left:50px;
+margin-right:0px;
+padding-left:25px;
+z-index:-1;
+}
+.button {
+    background-color:#333333;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+position:relative;
+    width:300px;
+   left:75px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #009933; 
+    color: white;
+}
+body{
+        background-image: url(d7.jpg) ;
+        backgroung-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        height:100%;
+        width:100%;
+    }
+images{
+position:absolute;
+float:left;
+background-image: url(d6.jpg) ;
+        backgroung-repeat: no-repeat;
+}

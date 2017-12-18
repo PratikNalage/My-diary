@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery.js"></script>
+    <script src="jquery_validate.js"></script>
+    <script>
+       $(document).ready(function(){
+            $("#signin").validate( {
+                rules: {
+                	fname:{
+                    required:true,
+                    minlength:3,
+                    maxlength:10
+                     },
+                    lname:{
+                    required:true,
+                    minlength:3,
+                    maxlength:10 
+                    },
+                    email:{
+                        required:true,
+                        email:true
+                    },
+                    mob:{
+                        required:true,
+                        minlength:6,
+                        maxlength:15
+                    },
+                    pass:{
+                        required:true,
+                        minlength:7,
+                        maxlength:20
+                    },
+                    cpass:{
+                        required:true,
+                        minlength:7,
+                        maxlength:20
+                    },
+                    
+                    dob:{
+                        date:true,
+                        required:true
+                    },
+                    contact:{
+                        required:true,
+                        number:true,
+                        minlength:10,
+                        maxlength:10
+                    }
+
+                },
+                messages:
+                {
+                    fname:{
+                        required:"Please enter your first name",
+                        minlength:"Please enter atleast 3 characters only ",
+                        maxlength:"Please enter 10 characters only "
+                        },                   
+                    lfname:{
+                        required:"Please enter your last name",
+                          minlength:"Please enter atleast 3 characters only ",
+                         maxlength:"Please enter 10 characters only "
+                        },   
+                    email:{
+                    	required:"Please enter your email address",
+                    	email:"Please enter EMail Address"
+                    },
+                    mob:{
+                        required:"Please enter Username",
+                        minlength:"Username must be 6-15 characters long",
+                        maxlength:"Username must be 6-15 characters long"
+                    },
+                    pass:{
+                        required:"Please enter password",
+                        minlength:"Password must be greater than 7 characters",
+                        maxlength:"Password must be not greater than 20 characters"
+                    },
+                    cpass:{
+                        required:"Please enter password",
+                        minlength:"Password must be greater than 7 characters",
+                        maxlength:"Password must be not greater than 20 characters"
+                    },
+                   dob:{
+                   required:"Please select a date",
+                   	date:"Select Appropriate date"
+                   },
+                   contact:{
+                   	 required:"Please enter a valid contact number",
+                        number:"Please enter numbers between 0-9",
+                        minlength:"Number should have a length of 10digits",
+                        maxlength:"Number should have a length of 10digits"
+                   }
+
+                }
+            })
+        })
+     
+
+    </script>
+</head>
+<body class="bdy">
+	<header class="hdr"><center><h1 class="title">My Diary</h1></center></header>
+	<div id="register">
+		<center><h2>Create an account</h2>
+		<form id="signin">
+			<table>
+				<tr>
+					<td><h3>First Name:<font color="red">*</font></h3></td>
+
+					<td><input class="textbox" type="text" name="fname" placeholder="First name"></td>
+					
+				</tr>
+				<tr>
+				<td><h3>Last Name:<font color="red">*</font></h3></td>
+					<td><input class="textbox" type="text" name="lname" placeholder="Surname"></td></tr>
+				<tr>
+					<td><h3>Email Address:<font color="red">*</font></h3></td>
+					<td colspan="2"><input class="textbox" type="email" name="email" placeholder="Email address"></td>
+				</tr>
+				<tr>
+					<td><h3>Username:<font color="red">*</font></h3></td>
+					<td colspan="2"><input class="textbox" type="text" name="mob" placeholder="Enter username"></td>
+				</tr>
+				<tr>
+					<td><h3>Password:<font color="red">*</font></h3></td>
+					<td colspan="2"><input class="textbox" type="password" name="pass" placeholder="Enter Password"></td>
+				</tr>
+				<tr>
+					<td><h3>Confirm Password:<font color="red">*</font></h3></td>
+					<td colspan="2"><input class="textbox" type="password" name="cpass" placeholder="Again enter Password"></td>
+				</tr>
+				<tr>
+					<td><h3>Professional Details:</h3></td>
+					<td colspan="2">
+                    <select >
+                       <option selected>Select Profession</option>
+                       <option>Student</option>
+                       <option>Home Maker</option>
+                       <option>Business</option>
+                       <option>Service</option>
+                       <option>Unemployed</option>
+                    </select>
+					</td>
+				</tr>
+				<tr>	
+					<td><h3>Specify Gender:<font color="red">*</font></h3></td>
+					<td colspan="2">
+		                <input  type="radio" name="gen" value="female"><font size="3">Female</font>
+		                <input  type="radio" name="gen" value="male"><font size="3">Male</font>
+		            </td>
+		        </tr>
+		        <tr>
+	                <td><h3>Enter Birthday:<font color="red">*</font></h3></td>
+	                <td><input class="textbox" type="date" name="dob" ></td>
+	            </tr>
+	            <tr>
+	            	<td><h3>Contact No:<font color="red">*</font></h3></td>
+	            	<td>	<input type="text" class="textbox" placeholder="Enter Contact Number"></td>
+	            </tr>
+	            </table>
+	            <button id="createacc"></button>
+	           
+
+	</form>
+		
+	</div>
+</body>
+</html>

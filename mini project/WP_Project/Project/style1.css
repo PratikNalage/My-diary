@@ -1,0 +1,45 @@
+.login {
+border:500px hidden;
+}
+.tables{
+text-align:center;
+}
+td{
+padding-left:100px;
+}
+.textbox{
+	font-size: 14pt;
+	height: 25px;
+	border-radius: 5px;
+        background:;
+}
+table{
+	padding: 2px;
+        margin-left:225px; 
+}
+
+tr{
+	padding: 5px;
+}
+.button {
+    background-color:#333333;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-left:300px;
+    width:500px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #004d00; 
+    color: white;
+}
+body{
+background:url("d7.jpg");
+}
+

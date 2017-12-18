@@ -1,0 +1,42 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.menu{
+    margin: 0px;
+    background-color: white;
+    height: 50px;
+    border-bottom: 1px solid #EDEDED;
+}
+.menu-title{
+    font-weight: bold;
+    font-size: 250%;
+    font-family: 'Indie Flower', cursive;
+    position: relative;
+    left:10%;
+    float: left;
+}
+.menu-bar{
+    float: right;
+    padding: 5px;
+    position: relative;
+    left: -10%;
+}
+.menu-bar-option{
+    float:left;
+    display: block;
+    font-family: 'Indie Flower', cursive;
+    font-size: 150%;
+    padding: 5px 10px 5px 10px;
+    border-radius: 30%;
+}
+.menu-bar-option:hover{
+    background-color: #F2F2F2;
+}
+.menu-bar-link{
+    text-decoration: none;
+    display: block;
+    color: black;
+}

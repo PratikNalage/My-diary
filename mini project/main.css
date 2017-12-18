@@ -1,0 +1,60 @@
+.hdr{
+	width: 100%;
+	height: 50px;
+	background-color: azure;
+	-webkit-margin-top-collapse: discard;
+}
+.bdy{
+	margin: 0px;
+	background-image: url('diarycover.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+h1.title{
+	font-size: 250%;
+	margin: 0px;
+	color: midnightblue;
+}
+#register{
+	position: absolute;
+	background-image: url('diary.jpg');
+	background-size: 700px 500px;
+	left: 30%;
+	top: 200px;
+	right: 30%;
+	z-index: 2;
+}
+
+
+table{
+	padding: 2px; 
+}
+td{
+	padding: 4px 15px;
+}
+tr{
+	padding: 5px;
+}
+.textbox{
+	font-size: 14pt;
+	height: 25px;
+	border-radius: 5px;
+}
+#createacc {
+    background: url('http://realbinaryoptionsreview.com/wp-content/uploads/2015/01/Create-A-Free-Account.png');
+    background-size: 420px 100px;
+    width: 420px; /* width of image */
+    height: 100px; /* height of image */
+    border: 0;
+}
+@media only screen and (max-width: 1500px){
+	#register{
+		background-image: initial;
+	}
+}
+@media only screen and (max-width: 700px){
+	#register{
+		background-image: initial;
+		left: 10px;
+	}
+}

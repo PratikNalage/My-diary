@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="jquery.js"></script>
+  <script src="jquery_validate.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--Jquery validation-->
+  <script>
+       $(document).ready(function(){
+            $("#signin").validate( {
+                rules: {
+                  fname:{
+                    required:true,
+                    minlength:3,
+                    maxlength:10
+                     },
+                    lname:{
+                    required:true,
+                    minlength:3,
+                    maxlength:10 
+                    },
+                    email:{
+                        required:true,
+                        email:true
+                    },
+                    mob:{
+                        required:true,
+                        minlength:6,
+                        maxlength:15
+                    },
+                    pass:{
+                        required:true,
+                        minlength:7,
+                        maxlength:20
+                    },
+                    cpass:{
+                        required:true,
+                        equalTo: "#mypass"
+                    },
+                    
+                    dob:{
+                        date:true,
+                        required:true
+                    },
+                    contact:{
+                        required:true,
+                        number:true,
+                        minlength:10,
+                        maxlength:10
+                    }
+
+                },
+                messages:
+                {
+                    fname:{
+                        required:"Please enter your first name",
+                        minlength:"Please enter atleast 3 characters only ",
+                        maxlength:"Please enter 10 characters only "
+                        },                   
+                    lfname:{
+                        required:"Please enter your last name",
+                          minlength:"Please enter atleast 3 characters only ",
+                         maxlength:"Please enter 10 characters only "
+                        },   
+                    email:{
+                      required:"Please enter your email address",
+                      email:"Please enter EMail Address"
+                    },
+                    mob:{
+                        required:"Please enter Username",
+                        minlength:"Username must be 6-15 characters long",
+                        maxlength:"Username must be 6-15 characters long"
+                    },
+                    pass:{
+                        required:"Please enter password",
+                        minlength:"Password must be greater than 7 characters",
+                        maxlength:"Password must be not greater than 20 characters"
+                    },
+                    cpass:{
+                        required:"Please enter your confirm password",
+                        equalTo:"Passwords do not match"
+                    },
+                   dob:{
+                   required:"Please select a date",
+                    date:"Select Appropriate date"
+                   },
+                   contact:{
+                     required:"Please enter a valid contact number",
+                        number:"Please enter numbers between 0-9",
+                        minlength:"Number should have a length of 10digits",
+                        maxlength:"Number should have a length of 10digits"
+                   }
+
+                }
+            })
+        })
+     
+
+    </script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="Test.html">My Diary</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <!--
+        <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+    -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Test.html">Home</a></li>
+        
+        <li><a href="login.html">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container"">
+  <center><h1 class="fonts">Create an account</h1></center>
+  <div id="register" class="regis">
+    <form id="signin" method="post" action="db.php">
+      <table>
+        <tr>
+          <td><h3>First Name:<font color="red">*</font></h3></td>
+
+          <td><input class="textbox" type="text" name="fname" placeholder="First name"></td>
+          
+        </tr>
+        <tr>
+        <td><h3>Last Name:<font color="red">*</font></h3></td>
+          <td><input class="textbox" type="text" name="lname" placeholder="Surname"></td></tr>
+        <tr>
+          <td><h3>Email Address:<font color="red">*</font></h3></td>
+          <td colspan="2"><input class="textbox" type="email" name="email" placeholder="Email address"></td>
+        </tr>
+        <tr>
+          <td><h3>Username:<font color="red">*</font></h3></td>
+          <td colspan="2"><input class="textbox" type="text" name="mob" placeholder="Enter username"></td>
+        </tr>
+        <tr>
+          <td><h3>Password:<font color="red">*</font></h3></td>
+          <td colspan="2"><input class="textbox" type="password" name="pass" placeholder="Enter Password" id="mypass" ></td>
+        </tr>
+        <tr>
+          <td><h3>Confirm Password:<font color="red">*</font></h3></td>
+          <td colspan="2"><input class="textbox" type="password" name="cpass" placeholder="Again enter Password" ></td>
+        </tr>
+        <tr>
+          <td><h3>Professional Details:</h3></td>
+          <td colspan="2">
+                    <select class="textbox" name="pofess">
+                       <option selected>Select Profession</option>
+                       <option value="Student">Student</option>
+                       <option value="Home">Home Maker</option>
+                       <option value="Business">Business</option>
+                       <option value="Service">Service</option>
+                       <option value="Unemployed">Unemployed</option>
+                    </select>
+          </td>
+        </tr>
+        <tr>  
+          <td><h3>Specify Gender:<font color="red">*</font></h3></td>
+          <td colspan="2">
+                    <input  type="radio" name="gen" value="male"><font size="3">Male</font>
+                    <input  type="radio" name="gen" value="female"><font size="3">Female</font>
+                </td>
+            </tr>
+            <tr>
+                  <td><h3>Enter Birthday:<font color="red">*</font></h3></td>
+                  <td><input class="textbox" type="date" name="dob" ></td>
+              </tr>
+              <tr>
+                <td><h3>Contact No:<font color="red">*</font></h3></td>
+                <td>  <input type="text" class="textbox" placeholder="Enter Contact Number" name="contact"></td>
+              </tr>
+              </table>
+              <button class="button">Create Account</button>
+             
+
+  </form>
+    
+  </div>
+</div>
+
+</body>
+</html>

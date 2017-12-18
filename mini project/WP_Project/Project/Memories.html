@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<title>abcd.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="abcd.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.abcd-row-padding img {margin-bottom: 12px}
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="abcd-sidebar abcd-black abcd-animate-top abcd-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="abcd_close()" class="abcd-button abcd-black abcd-xxlarge abcd-padding abcd-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="abcd-bar-block abcd-center">
+    <a href="Account.html" class="abcd-bar-item abcd-button abcd-text-grey abcd-hover-black">Home</a>
+    <a href="#" class="abcd-bar-item abcd-button abcd-text-grey abcd-hover-black">Write a diary</a>
+    <a href="Todolist.html" class="abcd-bar-item abcd-button abcd-text-grey abcd-hover-black">To do list</a>
+  
+  </div>
+</nav>
+
+
+<div class="abcd-content" style="max-width:1500px">
+
+
+<div class="abcd-opacity">
+<span class="abcd-button abcd-xxlarge abcd-white abcd-right" onclick="abcd_open()"><i class="fa fa-bars"></i></span> 
+<div class="abcd-clear"></div>
+<header class="abcd-center abcd-margin-bottom">
+  <h1><b>MEMORIES</b></h1>
+    <form action="Memory.php" method="post"><pre>Upload your memory       </pre><input name ="Memory" type="file"></input>
+    <input type=submit value="Submit">
+    </form>
+
+  <p class="abcd-padding-16"><button class="abcd-button abcd-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+</header>
+</div>
+
+
+<div class="abcd-row" id="myGrid" style="margin-bottom:128px">
+  <div class="abcd-third">
+   <center> <img src="sample1.jpg" style="width:100%">
+    <img src="Forrest.JPG" style="width:100%">    
+    <img src="" style="width:100%">
+   <img src="" style="width:100%">
+   <img src="" style="width:100%">
+       <img src="" style="width:100%"></center>
+  </div>
+
+  <div class="abcd-third">
+ <img src="" style="width:100%">
+ <img src="" style="width:100%">
+ <img src="" style="width:100%">
+ <img src="" style="width:100%">
+ <img src="" style="width:100%">
+ <img src="" style="width:100%">
+  </div>
+
+  <div class="abcd-third">
+   <img src="" style="width:100%">
+   <img src="" style="width:100%">
+   <img src="" style="width:100%">
+   <img src="" style="width:100%">
+   <img src="" style="width:100%">
+   <img src="" style="width:100%">
+  </div>
+</div>
+
+
+</div>
+
+        
+<center><hr width=30px></center>
+<div class="Image">
+<center>
+    <ahref="www.twitter.com"><img src="Twitter.png" height="30" width="30" ></a>
+    
+    <ahref="www.Facebook.com"><img class="middle-img" src="Facebook.png" height="30" width="30"></a>
+    
+    <img src="Snapchat.png" height="30" width="30">
+     
+    <ahref="www.Instagram.com"><img class="middle-img" src="Instagram.png" height="30" width="30"></a>
+    
+    <img src="Whatsapp.png" height="30" width="30"> 
+</center>
+</div>
+
+ 
+       
+
+
+
+<script>
+
+function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className === "abcd-row") {
+        x.className = "abcd-row-padding";
+    } else { 
+        x.className = x.className.replace("abcd-row-padding", "abcd-row");
+    }
+}
+
+
+function abcd_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function abcd_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

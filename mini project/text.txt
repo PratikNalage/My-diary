@@ -1,0 +1,24 @@
+users:
+id - pk
+username
+password
+firstname
+lastname
+email
+phone
+bdate
+gender
+
+diary:
+id - fk
+date
+title
+content
+
+tolist:
+id - fk
+items
+
+memories:
+id - fk
+photo
